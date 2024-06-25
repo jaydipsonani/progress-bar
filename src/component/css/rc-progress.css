@@ -1,0 +1,67 @@
+.step-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 15px;
+}
+
+.step-label {
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    transition: background-color 0.5s ease;
+}
+
+.circle.accomplished {
+    background-color: orange;
+}
+
+.inner-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.tooltip {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    width: 60px;
+    color: black;
+    font-weight: normal;
+    position: relative;
+    transition: background-color 0.5s ease, color 0.5s ease, font-weight 0.5s ease;
+}
+
+.tooltip.accomplished {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+.tooltip-arrow {
+    position: absolute;
+    left: 23px;
+    bottom: -10px;
+    border-top: 10px solid orange;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transition: border-top-color 0.5s ease;
+}
+
+.tooltip.accomplished .tooltip-arrow {
+    border-top-color: orange;
+}

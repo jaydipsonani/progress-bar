@@ -1,0 +1,25 @@
+.vertical-timeline::before {
+  position: absolute !important;
+  top: -6% !important;
+  left: 15px !important;
+  width: 12px !important;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: none !important;
+}
+
+.vertical-timeline::after {
+  content: "";
+  position: absolute;
+  top: -6%;
+  left: 15px;
+  height: var(--highlight-height);
+  width: 12px;
+  background: var(--highlight-color, darkorange);
+}
+
+.vertical-timeline-element-icon {
+  z-index: 1000;
+}
+
